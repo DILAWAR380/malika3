@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Dilawar Javed</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Leave Management System</h1>
+        <div id="login">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="dashboard" style="display: none;">
+            <h2>Welcome, <span id="user"></span></h2>
+            <button onclick="logout()">Logout</button>
+            <div id="leave-application">
+                <h3>Apply for Leave</h3>
+                <input type="date" id="leave-date">
+                <input type="text" id="leave-reason" placeholder="Reason">
+                <button onclick="applyLeave()">Apply</button>
+            </div>
+            <div id="leave-requests" style="display: none;">
+                <h3>Leave Requests</h3>
+                <ul id="requests"></ul>
+            </div>
+            <div id="leave-records">
+                <h3>Your Leave Records</h3>
+                <ul id="records"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
